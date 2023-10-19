@@ -1,0 +1,27 @@
+.container_content {
+  @apply grid h-screen grid-cols-3 flex-col justify-center bg-neutral-10 py-20;
+
+  .back_button {
+    @apply flex items-center space-x-2;
+
+    .back_text {
+      @apply text-lg font-medium;
+    }
+  }
+
+  .detail_content {
+    @apply mt-4 flex flex-col items-center rounded-2xl border bg-white p-4 py-16;
+
+    .detail_image {
+      @apply h-48 w-48 rounded-full;
+    }
+
+    .detail_name {
+      @apply mb-2 mt-8 text-3xl font-semibold;
+    }
+
+    .detail_email {
+      @apply text-xl font-normal;
+    }
+  }
+}

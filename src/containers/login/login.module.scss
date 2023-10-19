@@ -1,0 +1,34 @@
+.container_content {
+  background-image: url("/images/bg-login3.jpg");
+  background-position: center center;
+  @apply grid h-screen grid-cols-7 items-center justify-center space-y-6 bg-cover text-white;
+
+  .col_left {
+    @apply col-span-4;
+  }
+
+  .content {
+    @apply inset-0 col-span-2 m-auto flex w-full flex-col rounded-xl border border-neutral-20 bg-white p-5 shadow-md;
+
+    .header {
+      @apply text-2xl font-semibold text-primary;
+    }
+
+    .desc {
+      @apply mb-6 text-sm text-neutral-70;
+    };
+
+    .mb_input {
+      @apply mb-6;
+    }
+
+    .register {
+      @apply mt-8 text-center text-sm text-neutral-70;
+    }
+
+    .link_register {
+      @apply text-sm my-1.5 text-center font-semibold text-primary;
+    }
+  }
+
+}

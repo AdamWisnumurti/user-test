@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+
+    "target": "es5",
+    "outDir": "out",
+    "declaration": true,
+    "sourceMap": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "jsx": "preserve",
+    "noEmit": true,
+    "isolatedModules": true,
+    "incremental": true,
+
+    "baseUrl": ".",
+    "paths": {
+      // "@/*": ["./src/*"],
+      // "@component": ["./src/components/index.ts"],
+      "@component/*": ["./src/components/*"],
+      "@container/*": ["./src/containers/*"],
+      "@data": ["./src/datas/index.ts"],
+      "@hook": ["./src/hooks/index.ts"],
+      "@layout": ["./src/layouts/index.ts"],
+      "@context": ["./src/context/index.ts"],
+      "@service": ["./src/services/index.ts"],
+      "@type": ["./src/types/index.ts"],
+      "@util": ["./src/utils/index.ts"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
